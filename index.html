@@ -20,8 +20,49 @@
   <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
   <script>
     // TODO: replace these two with your real values from Remix:
-    const CONTRACT_ADDRESS = "PASTE_YOUR_ADDRESS_HERE";
-    const ABI = PASTE_YOUR_ABI_ARRAY_HERE;
+    const CONTRACT_ADDRESS = "0x88bB99628186dBD0d15177C913F938087961984a";
+    const ABI = [
+	{
+		"inputs": [],
+		"name": "decrement",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "get",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "increment",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "isOne",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
 
     let provider, signer, contract;
 
